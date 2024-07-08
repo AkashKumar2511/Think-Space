@@ -1,3 +1,7 @@
+![image](https://github.com/AkashKumar2511/Think-Space/assets/120348515/a7e914c7-f790-4138-98f6-f6ea428794b1)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
