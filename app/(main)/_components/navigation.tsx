@@ -1,13 +1,4 @@
 "use client";
-import { usePathname } from "next/navigation";
-
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { api } from "@/convex/_generated/api";
-import { cn } from "@/lib/utils";
 import { useMutation } from "convex/react";
 import {
   ChevronsLeft,
@@ -18,15 +9,26 @@ import {
   Settings,
   Trash,
 } from "lucide-react";
-import { ElementRef, useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { ElementRef, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { useMediaQuery } from "usehooks-ts";
+
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { api } from "@/convex/_generated/api";
+import { cn } from "@/lib/utils";
+import { UserItem } from "./user-item";
+
 import { DocumentList } from "./document-list";
 import { Item } from "./item";
 import { TrashBox } from "./trash-box";
-import { UserItem } from "./user-item";
-
+import { useSearch } from "@/hooks/use-search";
 export const Navigation = () => {
+  const search = useSearch();
   const pathname = usePathname();
   const isMobile = useMediaQuery("(max-width : 768px)");
   const create = useMutation(api.documents.create);
@@ -144,7 +146,7 @@ export const Navigation = () => {
         </div>
         <div>
           <UserItem />
-          <Item label="Search" icon={Search} isSearch onClick={() => {}} />
+          <Item label="Search" icon={Search} isSearch onClick={search.onOpen} />
           <Item label="Settings" icon={Settings} onClick={() => {}} />
           <Item onClick={handleCreate} label="New page" icon={PlusCircle} />
         </div>
