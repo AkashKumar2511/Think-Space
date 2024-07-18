@@ -1,4 +1,10 @@
-![image](https://github.com/AkashKumar2511/Think-Space/assets/120348515/a7e914c7-f790-4138-98f6-f6ea428794b1)
+Landing Page : 
+
+![image](https://github.com/user-attachments/assets/f8d97a66-cbef-48b3-b1f3-5e578bdfdf9a)
+Login :
+
+![image](https://github.com/user-attachments/assets/35bc1a3e-676c-4283-9e1a-fe119c086dd7)
+
 
 
 
