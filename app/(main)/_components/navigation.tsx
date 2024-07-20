@@ -23,11 +23,14 @@ import { api } from "@/convex/_generated/api";
 import { cn } from "@/lib/utils";
 import { UserItem } from "./user-item";
 
+import { useSearch } from "@/hooks/use-search";
+import { useSettings } from "@/hooks/use-settings";
 import { DocumentList } from "./document-list";
 import { Item } from "./item";
 import { TrashBox } from "./trash-box";
-import { useSearch } from "@/hooks/use-search";
+
 export const Navigation = () => {
+  const settings = useSettings();
   const search = useSearch();
   const pathname = usePathname();
   const isMobile = useMediaQuery("(max-width : 768px)");
@@ -147,7 +150,7 @@ export const Navigation = () => {
         <div>
           <UserItem />
           <Item label="Search" icon={Search} isSearch onClick={search.onOpen} />
-          <Item label="Settings" icon={Settings} onClick={() => {}} />
+          <Item label="Settings" icon={Settings} onClick={settings.onOpen} />
           <Item onClick={handleCreate} label="New page" icon={PlusCircle} />
         </div>
         <DocumentList />
