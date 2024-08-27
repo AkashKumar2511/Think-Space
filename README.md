@@ -1,9 +1,14 @@
 ## Landing Page : 
 
 ![image](https://github.com/user-attachments/assets/f8d97a66-cbef-48b3-b1f3-5e578bdfdf9a)
-## Login :
+## Login Page :
 
-![image](https://github.com/user-attachments/assets/35bc1a3e-676c-4283-9e1a-fe119c086dd7)
+![image](https://github.com/user-attachments/assets/c0a586ee-811b-401e-b923-ba048f4da30a)
+
+## Note Editing Page :
+
+![image](https://github.com/user-attachments/assets/0bcd6181-dc37-4015-8a39-b37f04c6d46e)
+
 
 
 
